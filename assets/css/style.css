@@ -36,8 +36,9 @@ li {
 .card {
     width: 50%;
     height: auto;
-    display: relative;
+    display: absolute;
     padding: 0px;
+    text-align: center;
 } 
 
 .float-left {
@@ -49,9 +50,13 @@ float: left;
 }
 
 img {
-    width: 100%;
-    height: 180px;
+    width: 50%;
+    height: auto;
 }
 h1, h2 {
     text-align: center;
+}
+
+.container {
+    display: relative;
 }
