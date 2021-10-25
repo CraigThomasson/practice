@@ -2,14 +2,85 @@ body {
     font-family: sans-serif, serif;
     margin: 0px;
     padding: 0px;
+    background-color: rgba(207,190,222,255);
 }
 
-.answers {
-    border: 3px solid black;
-    height: 30vh;
+#grid {
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 5vw;
+    grid-template-rows: .1fr 1fr 1fr .2fr;
+    column-gap: 5px;
+    grid-template-areas:
+    ". header header ."
+    ". title hero ."
+    ". form form-text ."
+    ". footer footer .";
 }
 
-.questions {
-    border: 3px solid black;
-    height: 20vh;
+#header {
+    grid-area: header;
+}
+
+#title h1 {
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 700%;
+    height: 33%;
+    margin: 0;
+}
+
+#title {
+    grid-area: title;
+    color: white;
+    height: 100%;
+}
+
+#heart {
+    background-color: rgba(238,1,141,255);
+}
+
+#break {
+    background-color: rgba(248,152,29,255);
+}
+
+#high {
+    background-color: rgba(90,47,137,255);
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav li ul {
+    display: inline;
+    /* width: 100%; */
+}
+
+li {
+    list-style-type: none;
+}
+
+#img-cont {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-img {
+    grid-area: hero;
+    width: 100%;
+}
+
+#hero-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#form {
+    grid-area: form;
+}
+
+#form-text {
+    grid-area: form-text;
 }

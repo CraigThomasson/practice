@@ -9,30 +9,40 @@
     </title>
 </head>
 <body>
-    <header>
-        <h1>Quize</h1>
-    </header>
-    <div class="difaculty">
-        <button>Easy</button>
-        <button>Medium</button>
-        <button>Hard</button>
+    <div id="grid">
+        <header id="header">
+            <nav id="nav">
+                <li>
+                    <ul>Home</ul>
+                    <ul>Episode guide</ul>
+                    <ul>Contact</ul>
+                </li>
+            </nav>
+        </header>
+        <div id="title">
+            <div id="heart">
+                <h1>Heart</h1>
+            </div>
+            <h1 id="break">break</h1>
+            <h1 id="high">HiGH</h1>
+        </div>
+        <div id="hero-img">
+            <img src="assets/images/HH.jpg" alt="image of heart break high cast on a beach having a good time">
+        </div>
+        <div id="form-text" class="box">
+            <h2>sing up here for a weakly news letter</h2>
+            <p>Keep up to date on all the gossip from corridores of heartly High</p>
+        </div>
+        <form id="form" class="box" action="#">
+            <label for="fname">First Name:</label>
+                    <input id="fname" name="fname" type="text" required><br>
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" name="lname" type="text" required><br>
+                    <label for="email">Email Address:</label>
+                    <input id="email" name="email" type="email" required><br>
+                    <input type="submit" value="SEND">
+        </form>
+
     </div>
-   <section id=game-board>
-       <div class="questions">
-           <h3>Question:</h3>
-           <P>this is a question?</P>
-        </div>
-       <div class="answers">
-           <h3>Answer:</h3>
-           <button class="answer-btn">A</button>
-           <button class="answer-btn">B</button>
-           <button class="answer-btn">C</button>
-           <button class="answer-btn">D</button>
-        </div>
-
-   </section>
-    
-
-    <script src="script.js"></script>
 </body>
 </html>
